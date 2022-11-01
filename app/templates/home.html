@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Dashboard</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="/static/styles/home.css"> </head>
+
+<body>
+    <div class="weatherDiv">
+        <h2>Weather Dashboard in Flask</h2>
+        <form class="weatherForm" action="{{url_for('render_results')}}" method="post">
+            <label>City name:<input id="weatherInput" class="weatherText" type="text" name="PlaceName"></label>
+            <input id="weatherSubmit" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
